@@ -1,6 +1,4 @@
 # HR Analytics Dataset
-![HR Analytics Dashboard](4e2a90d6-7842-4dfc-80f1-2b6a899a95a2_image.png)
-
 
 This repository contains an HR dataset (`HR_DATA_Excel.xlsx`) that provides detailed information about employees in a company. The dataset is useful for analyzing workforce trends, predicting attrition, and understanding factors influencing employee satisfaction and performance.
 
@@ -12,8 +10,8 @@ This repository contains an HR dataset (`HR_DATA_Excel.xlsx`) that provides deta
 5. [How to Use](#how-to-use)
 6. [Licensing](#licensing)
 7. [Contributions](#contributions)
-
 ---
+
 
 ## Dataset Overview
 The dataset contains **1,470 records** of employees, with **14 attributes** per record. It covers demographic details, job-related information, and performance metrics. This data can be used for exploratory analysis, predictive modeling, and deriving actionable insights for HR management.
@@ -37,10 +35,26 @@ The dataset contains **1,470 records** of employees, with **14 attributes** per 
 ---
 
 ## Insights and Observations
-- **Attrition Analysis**: Approximately 16% of employees have left the company. Factors like commute distance and work-life balance appear to influence attrition.
-- **Performance and Salary**: Higher performance ratings correlate with higher salaries.
-- **Overtime Patterns**: Certain departments (e.g., Sales, Research & Development) report higher overtime rates.
-- **Work-Life Balance**: Scores vary significantly across departments, impacting overall satisfaction.
+### HR Analytics Dashboard
+
+This dashboard provides key insights into employee attrition, demographics, and performance metrics.
+
+![HR Analytics Dashboard](4e2a90d6-7842-4dfc-80f1-2b6a899a95a2_image.png)
+
+### Key Insights from the Dashboard
+- **Total Employees**: 1470
+- **Attrition**: 237
+- **Active Employees**: 1233
+- **Attrition Rate**: 16%
+- **Average Age**: 37
+
+The dashboard includes visualizations such as:
+- **Total Employees by Gender**
+- **Education-wise Attrition**
+- **Attrition by Job Role**
+- **Department-wise Attrition**
+- **Attrition by Age Group**
+- **Attrition by Marital Status**
 
 ---
 
@@ -50,17 +64,3 @@ The dataset contains **1,470 records** of employees, with **14 attributes** per 
 3. Explore relationships between variables using visualizations and statistical methods.
 4. Build predictive models to forecast attrition or identify key drivers of employee satisfaction.
 
-Example (Python):
-```python
-import pandas as pd
-
-# Load the dataset
-df = pd.read_excel("HR_DATA_Excel.xlsx", sheet_name="HR_Data")
-
-# Display basic information
-print(df.info())
-print(df.describe())
-
-# Analyze attrition
-attrition_rate = df['Attrition'].value_counts(normalize=True)
-print(attrition_rate)
