@@ -1,4 +1,6 @@
 # HR Analytics Dataset
+![HR Analytics Dashboard](4e2a90d6-7842-4dfc-80f1-2b6a899a95a2_image.png)
+
 
 This repository contains an HR dataset (`HR_DATA_Excel.xlsx`) that provides detailed information about employees in a company. The dataset is useful for analyzing workforce trends, predicting attrition, and understanding factors influencing employee satisfaction and performance.
 
